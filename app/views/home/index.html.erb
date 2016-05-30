@@ -1,0 +1,10 @@
+<h1>Put Saxoprint product URL to parse</h1>
+<%= form_tag do %>
+  <div><%= text_field_tag 'parse_url' %></div>
+<% end %>
+
+<% if params[:parse_url] %>
+  <p>
+    <%= @product_title %> price: <%= @product_price %>
+  </p>
+<% end %>
